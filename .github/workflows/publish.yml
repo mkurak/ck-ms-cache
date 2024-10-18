@@ -21,13 +21,6 @@ jobs:
                   node-version: '18'
                   registry-url: 'https://registry.npmjs.org/'
 
-            - name: Set up Docker
-              uses: docker/setup-buildx-action@v2
-              # run: sudo apt-get update && sudo apt-get install docker.io -y
-
-            - name: Start RabbitMQ
-              run: docker run -d -p 5672:5672 -p 15672:15672 --name rabbitmq rabbitmq:3-management
-
             - name: Install Dependencies
               run: npm install
 

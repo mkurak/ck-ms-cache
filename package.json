@@ -1,6 +1,6 @@
 {
     "name": "ck-ms-cache",
-    "version": "0.1.0",
+    "version": "1.0.0",
     "description": "Used by CK-MS packages and for managing cache operations in microservice applications developed using this infrastructure.",
     "main": "dist/index.js",
     "types": "dist/index.d.ts",
@@ -26,6 +26,7 @@
     "devDependencies": {
         "@types/amqplib": "^0.10.5",
         "@types/jest": "^29.5.13",
+        "@types/keyv": "^4.2.0",
         "@types/node": "^22.7.4",
         "eslint": "^9.11.1",
         "eslint-config-prettier": "^9.1.0",
@@ -38,7 +39,8 @@
         "typescript": "^5.6.2"
     },
     "dependencies": {
-        "ck-ms-di": "^2.0.2"
+        "ck-ms-di": "^2.0.2",
+        "keyv": "^5.1.0"
     },
     "repository": {
         "type": "git",
